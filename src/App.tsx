@@ -17,9 +17,6 @@ const sampleData: ITodo[] = [
 ];
 
 const App: FC = () => {
-  const [currentTodoId, setCurrentTodoId] = useState<number>(
-    sampleData[sampleData.length - 1].id
-  );
   const [todos, setTodos] = useState<ITodo[]>(sampleData);
 
   return (
